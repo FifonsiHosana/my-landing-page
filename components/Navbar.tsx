@@ -10,16 +10,15 @@ const Navbar = () => {
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
       if (currentScrollY > lastScrollY && currentScrollY > 35) {
         setIsVisible(false);
-      } else if(lastScrollY > currentScrollY) {
+      } else if (lastScrollY > currentScrollY) {
         setIsVisible(true);
       }
       lastScrollY = currentScrollY;
     };
-    window.addEventListener("scroll", handleScroll);
 
+    window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -43,19 +42,7 @@ const Navbar = () => {
               href="#features"
               className="text-gray-400 hover:text-black transition"
             >
-              Features
-            </a>
-            <a
-              href="#pricing"
-              className="text-gray-400 hover:text-black transition"
-            >
-              Pricing
-            </a>
-            <a
-              href="#contact"
-              className="text-gray-400 hover:text-black transition"
-            >
-              Contact
+              What we do
             </a>
             <a
               href="#solutions"
@@ -64,35 +51,98 @@ const Navbar = () => {
               Solutions
             </a>
             <a
-              href="#case-Study"
+              href="#industries"
               className="text-gray-400 hover:text-black transition"
             >
-              Case Study
+              Industries
             </a>
+            <a
+              href="#projects"
+              className="text-gray-400 hover:text-black transition"
+            >
+              Projects
+            </a>
+            <a
+              href="#footer"
+              className="text-gray-400 hover:text-black transition"
+            >
+              Contact Us
+            </a>
+          </div>
+
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="text-gray-700 focus:outline-none"
+            >
+              {mobileMenuOpen ? (
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              )}
+            </button>
           </div>
         </div>
       </div>
 
       {mobileMenuOpen && (
-        <div className="md:hidden bg-slate-900/95 backdrop-blur-sm">
+        <div className="md:hidden bg-white backdrop-blur-sm">
           <div className="px-4 pt-2 pb-4 space-y-2">
             <a
               href="#features"
-              className="block text-gray-300 hover:text-black py-2"
+              className="block text-gray-600 hover:text-white py-2"
             >
-              Features
+              What we do
             </a>
             <a
-              href="#pricing"
-              className="block text-gray-300 hover:text-black py-2"
+              href="#solutions"
+              className="block text-gray-600 hover:text-white py-2"
             >
-              Pricing
+              Solutions
             </a>
             <a
-              href="#contact"
-              className="block text-gray-300 hover:text-black py-2"
+              href="#industries"
+              className="block text-gray-600 hover:text-white py-2"
             >
-              Contact
+              Industries
+            </a>
+            <a
+              href="#projects"
+              className="block text-gray-600 hover:text-white py-2"
+            >
+              Projects
+            </a>
+            <a
+              href="#footer"
+              className="block text-gray-600 hover:text-white py-2"
+            >
+              Contact Us
             </a>
           </div>
         </div>
@@ -100,4 +150,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;

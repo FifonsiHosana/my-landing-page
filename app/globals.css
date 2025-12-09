@@ -138,3 +138,14 @@ body {
   }
 
 }
+@keyframes highlight {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}

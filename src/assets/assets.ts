@@ -11,6 +11,8 @@ import edu from "./logo-edu.png"
 import mtn from "./logo-mtn.png"
 import gulf from "./GULF-logo-sized.png"
 import backgrnd from "./white-beach-sand-background-picjumbo-com.jpg"
+import logoAdroit from "./Adroit.png"
+import rudder from "./download.svg"
 
 export const assets = {
   law,
@@ -26,4 +28,6 @@ export const assets = {
   ntheatre,
   petrolLogo,
   backgrnd,
+  logoAdroit,
+  rudder
 };

@@ -11,7 +11,9 @@ import Footer from "@/components/Footer";
 import { SwipeCarousel } from "@/components/Tech";
 import Employers from "@/components/Employers";
 import Carousel from "@/components/Carousel";
-import Header from "@/components/Header";
+import UseScrollAdvanced from "@/components/ScrollFx";
+import SkillCount from "@/components/SkillCount";
+
 
 export default function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,25 +29,23 @@ export default function LandingPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
-      <Header></Header>
-      
+      <Navbar/>
+
+      <Hero/>
+
+      <SkillCount/>
+
       <Features></Features>
 
       <Solutions></Solutions>
 
       <Industries></Industries>
-      <Carousel></Carousel>
+      
+      {/* <Carousel></Carousel> */}
 
       <Employers></Employers>
 
       <Footer></Footer>
-
-      <footer className="border-t border-white/10 py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center text-gray-400">
-          <p>&copy; 2025 Adroit. All rights reserved.</p>
-        </div>
-      </footer>
     </div>
   );
 }

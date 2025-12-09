@@ -4,18 +4,18 @@ import { motion } from "motion/react";
 
 const Employers = () => {
   return (
-    <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 ">
+    <section id="projects" className="py-10 md:py-20 px-4 sm:px-6 lg:px-8 ">
       <div className="max-w-7xl mx-auto">
         <div className="">
           <div className=" ">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center ">
               <div className="">
-                <p className="text-sky-300 font-medium uppercase tracking-wide px-6 py-2">
+                <p className="sm:hidden text-sky-300 font-medium uppercase tracking-wide px-6 py-2">
                   WHAT WE DO
                 </p>
-                <h2 className="text-4xl md:text-5xl font-extrabold text-pink-400 px-6 py-5">
+                <h2 className="text-3xl md:text-6xl font-extrabold text-pink-400 px-6 py-5">
                   Trusted by major brands in Africa and beyond
-                  <p className="text-4xl md:text-xl text-gray-700  max-w-2xl mx-auto leading-tight">
+                  <p className="text-2xl md:text-2xl text-gray-600  max-w-2xl mx-auto pt-7">
                     Our team has delivered platforms
                     <br />
                     and products for some of the largest
