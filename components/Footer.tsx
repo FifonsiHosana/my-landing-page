@@ -12,7 +12,7 @@ const {scrollYProgress} = useScroll({
   target: targetRef,
   offset: ["start end" , "end start"]
 })
-const scale = useTransform(scrollYProgress, [0,1], [0.7, 2] )
+const scale = useTransform(scrollYProgress, [0,1], [0.8, 1.4] )
 
     return (
       <section id="footer" className="bg-black">
@@ -97,12 +97,16 @@ const scale = useTransform(scrollYProgress, [0,1], [0.7, 2] )
                 </a>
               </div>
             </div>
-            <div className="max-sm:hidden flex justify-center items-center">
-              <motion.div ref={targetRef} style={{scale}} className="bg-amber-50 rounded-full border-20 border-pink-400 h-1/2 flex">
+            <div className="max-sm:hidden flex justify-end items-center">
+              <motion.div
+                ref={targetRef}
+                style={{ scale }}
+                className="bg-amber-50 rounded-full border-20 border-pink-400 h-1/2 flex mr-10"
+              >
                 <img
                   src={assets.logoAdroit.src}
                   alt="adroit"
-                  className="justify-center items-center object-none"
+                  className="object-none "
                 />
               </motion.div>
             </div>
