@@ -20,7 +20,7 @@ export const inter = Inter_Tight({
 });
 
 const metadata: Metadata = {
-  title: "Landing page",
+  title: "Adroit Landing page",
   description: "The Landing page",
 };
 
