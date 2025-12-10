@@ -34,7 +34,7 @@ const scale = useTransform(scrollYProgress, [0,1], [0.8, 1.4] )
                     <a href="#">IT Consulting & Digital Strategy</a>
                   </p>
                 </div>
-                <div className="">
+                <div className="max-sm:text-right">
                   <p className="hover:text-blue-400 m-2">
                     <a href="#">DevOps & Automation Solutions</a>
                   </p>
@@ -65,19 +65,21 @@ const scale = useTransform(scrollYProgress, [0,1], [0.8, 1.4] )
                     <a href="#">Careers</a>
                   </p>
                 </div>
-                <div className="mb-4">
-                  <p className="hover:text-blue-400 m-2">
-                    <a href="#">FAQs</a>
+                <div className="mb-4 ">
+                  <p className=" m-2 max-sm:text-right">
+                    <a className="hover:text-blue-400" href="#">
+                      FAQs
+                    </a>
                   </p>
                 </div>
               </div>
-              <div className="grid grid-rows-3 mt-5">
+              <div className="grid grid-rows-3">
                 <input
-                  placeholder="Get in touch"
+                  placeholder=" Get in touch"
                   type="email"
                   id="Email"
                   aria-description="email"
-                  className="mt-0.5 w-1/2 rounded border border-gray-500 shadow-sm sm:text-sm my-4"
+                  className="my-3 w-4/5 h-3/7 md:w-2/5 rounded border border-gray-500 shadow-sm sm:text-sm self-end"
                 />
                 <p className="text-gray-400">
                   <input
@@ -89,11 +91,11 @@ const scale = useTransform(scrollYProgress, [0,1], [0.8, 1.4] )
                   Privacy Policy.
                 </p>
                 <a
-                  className="mt-3 rounded-sm w-1/5 flex flex-row items-center justify-between gap-2 border border-indigo-600 bg-indigo-600 px-6 py-3 text-sm font-medium text-white hover:bg-white hover:text-indigo-600 transition-colors duration-200"
+                  className="mt-3 rounded-sm w-2/7 h-3/7  md:w-1/5 flex flex-row items-center justify-between  border border-indigo-600 bg-indigo-600 px-6 py-3 text-sm font-medium text-white hover:bg-white hover:text-indigo-600 transition-colors duration-200"
                   href="#"
                 >
                   <span>Send</span>
-                  <ArrowRightIcon className="w-2/3 " />
+                  <ArrowRightIcon className="w-2/3" />
                 </a>
               </div>
             </div>

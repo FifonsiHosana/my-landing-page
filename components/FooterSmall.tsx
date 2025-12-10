@@ -64,22 +64,24 @@ const itemVariants = {
 export default function FooterSmall() {
   return (
     <motion.footer
-      className="bg-pink-100 font-inter "
+      className="bg-pink-100 font-inter"
       variants={footerVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.2 }}
     >
-      <div className="mx-auto max-w-7xl px-6 pb-8 pt-8 overflow-hidden">
+      <div className="mx-auto max-w-7xl px-6 pb-8 pt-8 ">
         {/*  */}
-        <div className="flex flex-col md:flex-row md:gap-12 gap-4 items-start w-full">
+        <div className="flex flex-col md:flex-row md:gap-6 lg:gap-8 xl:gap-24 items-start lg:justify-between w-full">
           <div className="flex flex-row items-center gap-2">
             <img
               src={assets.logoAdroit.src}
               alt="Adroit Logo"
               className="w-10 h-10"
             />
-            <p className="font-inter text-xl text-black">Adroit 360</p>
+            <p className="font-inter text-xl text-black lg:text-2">
+              Adroit 360
+            </p>
           </div>
           <div className="border border-gray-300 w-full hidden md:block md:w-0 md:h-12 " />
           <div className="hidden md:block">
@@ -90,20 +92,20 @@ export default function FooterSmall() {
             </p>
           </div>
           <div className="border border-gray-300 w-full md:w-0 md:h-12" />
-          <div className="space-y-4 md:space-y-0">
+          <div className="space-y-4 md:space-y-0 mt-3">
             <p className="text-sky-400 text-base md:hidden block">
               Kwame Gyan Complex,
               <br className="hidden md:block" />
               Accra, Ghana
             </p>
-            <div>
+            <div className="mb-3">
               <p className="text-black text-base">T:+233 20 076 5236</p>
               <p className="text-black text-base">E:adroit360@info.com</p>
             </div>
           </div>
-          <div className="border border-gray-300 w-full md:w-0 md:h-12" />
+          <div className="border border-gray-300 w-full md:w-0 md:h-12 " />
           {/* Mobile Icons */}
-          <div className="grid grid-cols-3 w-full gap-4 md:hidden">
+          <div className="grid grid-cols-3 w-full gap-4 md:hidden mt-3">
             {icons.map((item) => (
               <motion.a
                 key={item.name}
